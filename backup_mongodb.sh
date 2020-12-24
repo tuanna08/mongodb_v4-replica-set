@@ -19,7 +19,7 @@ COLLECTION_NAME[1]="MgLead"
 mkdir -p $HOME/backup_mongodb/$DATE_STR/
 for i in "${COLLECTION_NAME[@]}"
 do     
-    mongodump --host=$DB_HOST --username $USERNAME --password $PASSWORD --authenticationDatabase admin --collection=MgTeam --db=$DB_NAME --out=$HOME/backup_mongodb/$DATE_STR/
+    mongodump --host=$DB_HOST --username $USERNAME --password $PASSWORD --authenticationDatabase admin --collection=$i --db=$DB_NAME --out=$HOME/backup_mongodb/$DATE_STR/
 done
 
 echo "Backup dữ liệu mongodb "$DB_NAME" thành công: "$DATE_TIME_STR >> $HOME/backup_mongodb/log_backup.out
