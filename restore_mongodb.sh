@@ -13,7 +13,7 @@ DATE_TIME_STR=$(date +"%d-%b-%YT%T")
 DB_HOST="billing-replset/billing-mongo1.local:27017"
 DB_NAME="billing"
 USERNAME="mongo-admin"
-PASSWORD="123456-6666-8888-68686"
+PASSWORD=""
 
 COLLECTION_NAME[0]="MgEmployee"
 COLLECTION_NAME[1]="MgLead"
